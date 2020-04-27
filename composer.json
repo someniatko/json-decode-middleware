@@ -1,0 +1,32 @@
+{
+    "name": "someniatko/json-decode-middleware",
+    "description": "Simple PSR-15 middleware for decoding JSON body of a server request when given respective Content-Type header",
+    "type": "library",
+    "require": {
+        "php": "^7.3",
+        "ext-json": "*",
+        "psr/http-message": "^1.0",
+        "psr/http-server-middleware": "^1.0",
+        "psr/http-server-handler": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.1",
+        "nyholm/psr7": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Someniatko\\JsonDecodeMiddleware\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "test"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.3.0"
+        }
+    },
+    "license": "MIT"
+}
