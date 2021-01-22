@@ -3,7 +3,7 @@
     "description": "Simple PSR-15 middleware for decoding JSON body of a server request when given respective Content-Type header",
     "type": "library",
     "require": {
-        "php": "^7.3",
+        "php": "^7.3 || ^8.0",
         "ext-json": "*",
         "psr/http-message": "^1.0",
         "psr/http-server-middleware": "^1.0",
@@ -21,11 +21,6 @@
     "autoload-dev": {
         "psr-4": {
             "Test\\": "test"
-        }
-    },
-    "config": {
-        "platform": {
-            "php": "7.3.0"
         }
     },
     "license": "MIT"
